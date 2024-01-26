@@ -1,7 +1,7 @@
 import requests
 import json
 
-def searchsg(query):
+def searchsg(query,s):
     url = f'https://www.stadiumgoods.com/api/commerce/v1/listing?pageindex=1&query={query.replace(" ", "%20")}'
     
     headers = {
@@ -18,6 +18,6 @@ def searchsg(query):
         'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36'
     }
 
-    html = requests.get(url = url, headers = headers)
+    html = s.get(url = url, headers = headers)
     output = json.loads(html.text)
     return output['products']['entries']['0']
