@@ -8,5 +8,6 @@ This information is useful because it allows users to know what website to list 
 <h3>Dependencies</h3>
 <p>Cloudscraper https://pypi.org/project/cloudscraper/</p>
 <p>Requests https://pypi.org/project/requests/</p>
+<p>Requests-Toolbelt https://pypi.org/project/requests-toolbelt/</p>
 
 
